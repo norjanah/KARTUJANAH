@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.janah.kartujanah.MainActivity">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="SELAMAT HARI RAYA IDUL FITRI"
+        android:textSize="20sp"
+        android:fontFamily="serif"
+        android:textColor="#e74c3c"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="mohon maaf lahir dan batin"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:textColor="#e74c3c"
+        android:textStyle="bold"
+        android:id="@+id/isi"
+        android:layout_below="@id/judul"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/masjid"
+        android:layout_below="@id/isi"
+        />
+
+</RelativeLayout>
